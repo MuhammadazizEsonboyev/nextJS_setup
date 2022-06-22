@@ -1,7 +1,9 @@
 import '../styles/globals.css'
+import { nanoid } from "nanoid";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+model.id = nanoid();
+const MyApp = ({ Component, pageProps }) => {
+return  <Component {...pageProps} />
 }
 
 export default MyApp
